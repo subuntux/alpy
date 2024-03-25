@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: alpy
+Version: 0.1.0
+Summary: alpy is an modul for easyer python scripts
+Home-page: https://github.com/yourusername/yourpackage
+Author: Kevin Alexander Krefting
+Author-email: kakrefting@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# create alpy
+
+Following functions are actually used
+
+```python
+import os 
+
+def show(text):
+    print(text)
+    
+def user(text):
+    return input(text)
+    
+def user_l(text):
+    return input(text).lower()
+    
+def case_if(variable, content):
+    if variable == content:
+        return True
+
+def case_elif(variable, content):
+    if variable == content:
+        return True
+
+def case_else(output):
+    if output is not None:
+        output()
+        
+def cmd(command):
+    os.system(command)
+    
+def sys_clear():
+    os.system("clear")
+```
+
+## Import
+
+```python
+import alpy
+```
