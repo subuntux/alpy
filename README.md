@@ -84,17 +84,19 @@ from alpy import alpy
 
 <details id="option-menu">
   <summary>Option Menu</summary>
-  1. In Python (Without alpy modul)
-  ```Python
-  import os
-  
-  def main_menu()
+  <details id="without">
+    <summary>without</summary>
+        <pre>
+            <code>
+            import os
+
+def main_menu():
     os.system("clear")
     print("[1] Option 1")
     print("[2] Option 2")
     print("[3] Option 3")
     
-    choice = input(select: ).lower()
+    choice = input("select: ").lower()
     
     if choice == '1':
         option1()
@@ -104,28 +106,32 @@ from alpy import alpy
         option3()
     else:
         print("Error")
-    ```
+            </code>
+        </pre>
+  </detail>
+  <details id="with">
+    <summary>with</summary>
+         <pre>
+            <code>
+           from alpy import alpy
 
-    2. In Python (With alpy modul)
-    ```python
-    from alpy import alpy
+def main_menu():
+    alpy.sys_clear()
+    alpy.show("[1] Option 1")
+    alpy.show("[2] Option 2")
+    alpy.show("[3] Option 3")
     
-    def main_menu()
-        alpy.sys_clear()
-        alpy.show("[1] Option 1")
-        alpy.show("[2] Option 2")
-        alpy.show("[3] Option 3")
-        
-        choice = alpy.user_l("select: ")
-        
-        if alpy.case(choice, '1'):
-            option1()
-        elif alpy.case(choice, '2'):
-            option2()
-        elif alpy.case(choice, '3'):
-            option3()
-        else:
-            alpy.show("Error")
-    ```        
-
+    choice = alpy.user_l("select: ")
+    
+    if alpy.case(choice, '1'):
+        option1()
+    elif alpy.case(choice, '2'):
+        option2()
+    elif alpy.case(choice, '3'):
+        option3()
+    else:
+        alpy.show("Error")
+            </code>
+        </pre>
+  </details>
 </details>
