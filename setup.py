@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='alpy',  # Der Name Ihres Pakets
-    version='0.1.0',  # Die Versionsnummer Ihres Pakets
+    version='0.1.2',  # Die Versionsnummer Ihres Pakets
     author='Kevin Alexander Krefting',
     author_email='kakrefting@gmail.com',
     description='alpy is an modul for easyer python scripts',
