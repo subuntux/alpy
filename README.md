@@ -126,5 +126,6 @@ from alpy import alpy
             option3()
         else:
             alpy.show("Error")
-            
-</detail>
+    ```        
+
+</details>
